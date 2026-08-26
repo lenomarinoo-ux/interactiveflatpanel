@@ -18,8 +18,8 @@
     <meta property="og:site_name" content="PanelPro Interactive Flat Panel">
     
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="icon" href="img/logo-favicon.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="img/logo-favicon.webp">
     <link rel="canonical" href="https://interactiveflatpanel.web.id/package.html">
 
     <!-- Preconnect for Performance -->
@@ -292,7 +292,6 @@
         </ul>
       </div>
     </div>
-
 
     <!-- Simple Hero Section (Paket) -->
     <section class="bg-primary-custom bg-dots border-bottom-black-2 pt-5 pb-5 mt-5">
@@ -579,36 +578,37 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         // Efek hover untuk dropdown menu
-        const dropdownItems = document.querySelectorAll('.neo-dropdown .dropdown-item');
-        dropdownItems.forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                item.style.backgroundColor = 'var(--primary)';
-                item.style.color = '#fff';
-            });
-            item.addEventListener('mouseleave', () => {
-                // Jangan hilangkan warna jika elemen tersebut aktif (halaman ini)
-                if(!item.classList.contains('active')) {
-                    item.style.backgroundColor = 'transparent';
-                    item.style.color = '#000';
-                }
-            });
-        });
-
-        // Efek hover untuk ikon sosial media
-        document.querySelectorAll('.social-icon').forEach(icon => {
-            icon.addEventListener('mouseenter', () => {
-                icon.style.backgroundColor = 'var(--primary)';
-                icon.style.color = '#fff';
-                icon.style.borderColor = '#000';
-            });
-            icon.addEventListener('mouseleave', () => {
-                icon.style.backgroundColor = 'var(--dark)';
-                icon.style.color = '#6c757d';
-                icon.style.borderColor = '#6c757d';
-            });
-        });
+                const dropdownItems = document.querySelectorAll('.neo-dropdown .dropdown-item');
+                dropdownItems.forEach(item => {
+                    item.addEventListener('mouseenter', () => {
+                        item.style.backgroundColor = 'var(--primary)';
+                        item.style.color = '#fff';
+                    });
+                    item.addEventListener('mouseleave', () => {
+                        // Jangan hilangkan warna jika elemen tersebut aktif (halaman ini)
+                        if(!item.classList.contains('active')) {
+                            item.style.backgroundColor = 'transparent';
+                            item.style.color = '#000';
+                        }
+                    });
+                });
+        
+                // Efek hover untuk ikon sosial media
+                document.querySelectorAll('.social-icon').forEach(icon => {
+                    icon.addEventListener('mouseenter', () => {
+                        icon.style.backgroundColor = 'var(--primary)';
+                        icon.style.color = '#fff';
+                        icon.style.borderColor = '#000';
+                    });
+                    icon.addEventListener('mouseleave', () => {
+                        icon.style.backgroundColor = 'var(--dark)';
+                        icon.style.color = '#6c757d';
+                        icon.style.borderColor = '#6c757d';
+                    });
+                });
     </script>
 </body>
 </html>
